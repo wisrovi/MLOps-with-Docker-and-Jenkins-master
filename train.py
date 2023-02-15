@@ -19,7 +19,7 @@ X_train = df.drop('income', axis=1)
 y_train = df['income']
 
 # Model
-logit_model = LogisticRegression(max_iter=100)  # 10000
+logit_model = LogisticRegression(max_iter=1)  # 10000
 logit_model = logit_model.fit(X_train, y_train)
 
 # Cross validation
